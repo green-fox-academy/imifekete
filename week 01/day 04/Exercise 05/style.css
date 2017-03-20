@@ -1,0 +1,20 @@
+.blue{
+  color: #0012b3;
+}
+
+.yellow{
+  color: #f9a62e;
+}
+.red{
+  color: #cf141b;
+}
+.black{
+  color:#010000;
+}
+
+.dot{
+  list-style-type: disc;
+}
+.square{
+  list-style-type: square;
+}

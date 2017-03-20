@@ -1,0 +1,13 @@
+main{
+  width:150px;
+}
+.big {
+  color:blue;
+}
+p.asteroid,big{
+  background-color: yellow;
+}
+#b325,
+.b326{
+  border: 1px solid green;
+}

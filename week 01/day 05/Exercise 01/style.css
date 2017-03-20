@@ -1,0 +1,109 @@
+pics-container {
+  width: 1300px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.image {
+  width: 1400px;
+  height: 400px;
+  align-content: center;
+  margin: 0 auto;
+}
+
+.nameonpics {
+  position: absolute;
+  top: 200px;
+  left: 270px;
+  bottom: 20px;
+  font-family: 'Bree Serif', serif;
+  opacity: 0.7;
+
+}
+
+.anakinname {
+  font-size: 80px;
+}
+
+.article {
+  width:900px;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+img {
+  height: 305px;
+  width: 958px;
+  }
+
+  .first-section {
+    font-size: 17px;
+    margin: 50px;
+  }
+
+  .second-section {
+    margin: 50px;
+  }
+
+  .third-section{
+    margin: 50px;
+  }
+
+  .forth-section{
+    margin:50px;
+  }
+
+  .fifth-section{
+    margin:50px;
+    border-top: solid 2px;
+  }
+
+  .h2{
+    font-size: 30px;
+    text-transform: capitalize;
+  }
+
+.emphasized {
+    font-weight: bold;
+  }
+.greycontainer{
+  background-color: #444444;
+  width: 780px;
+  height: 150px;
+  align-content: center;
+  margin: 0 auto;
+}
+  .greycontainer-bigger{
+    background-color: #444444;
+    width: 800px;
+    height: 170px;
+    align-content: center;
+    margin: 0 auto;
+  }
+
+.white-text{
+  font-size: 45px;
+  text-align: center;
+  padding-top: 50px;
+  color: white;
+  font-family: 'Bree Serif', serif;
+}
+
+.square.{
+  list-style-type: square;
+}
+
+.square{
+  list-style-type: square;
+  font-size: 13px;
+}
+
+.small-letters {
+  font-size: 13px;
+}
+.italic{
+  font-style: italic;
+  font-size: 15px;
+  font-family: 'Noto Serif', serif;
+  padding-top: 0px;
+}
