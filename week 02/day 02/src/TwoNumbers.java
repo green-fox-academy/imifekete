@@ -6,5 +6,14 @@ public class TwoNumbers {
     System.out.println(13+22);
     System.out.println(13-22);
     System.out.println(22*13);
+    System.out.println(22);
+    System.out.println(22.0 / 13.0);
+
+    int a = 22;
+    int b = 12;
+
+    System.out.println( a / b );
+
+
   }
 }
