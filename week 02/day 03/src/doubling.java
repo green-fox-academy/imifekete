@@ -17,4 +17,3 @@ public class doubling {
 // - Create a function called `doubling` that doubles it's input parameter
 // - Print the result of `doubling(ak)`
 
-  
