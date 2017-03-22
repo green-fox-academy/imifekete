@@ -8,3 +8,5 @@ public class HelloOthers {
     System.out.println("Hello Adam!");
   }
 }
+
+

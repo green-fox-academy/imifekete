@@ -4,12 +4,10 @@
 public class greeter_function {
   public static void main(String[] args) {
     String al = "Greenfox";
-
-    greet(al);
+    System.out.println(greet(al));
   }
-
-  private static void greet(String toGreet) {
-    System.out.println("Greetings dear, " + toGreet);
+  public static String greet(String al) {
+    return "Greetings dear, " + al;
   }
 }
 

@@ -21,16 +21,13 @@ public class exercise19 {
 
     if (n <= 0) {
       System.out.println("Not enough");
-          }
-        else if (n == 1) {
-            System.out.println("One");
-          }
-        else if (n == 2) {
-            System.out.println("Two");
-          }
-        else {
-            System.out.println("A lot");
-          }
+    } else if (n == 1) {
+      System.out.println("One");
+    } else if (n == 2) {
+      System.out.println("Two");
+    } else {
+      System.out.println("A lot");
+    }
 
 
   }
