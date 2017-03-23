@@ -7,7 +7,7 @@ public class url_fixer02 {
 
     url = url.replace("bots", "odds");
     url = url.substring(0, 5).concat(":").concat(url.substring(5, url.length()));
-    
+
     System.out.println(url);
   }
 }
