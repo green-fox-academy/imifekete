@@ -18,5 +18,7 @@ public class AnimalsAndLegs {
     int pigs = myScanner.nextInt();
     System.out.println((chickens * 2 + pigs * 4) + " legs altogether.");
 
+
+
   }
 }
