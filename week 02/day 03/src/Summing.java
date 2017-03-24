@@ -14,7 +14,7 @@ public class Summing {
     System.out.println("The sum is: " + sum(numGiven));
   }
 
-  private static int sum(int sumTill) {
+  public static int sum(int sumTill) {
     int sum = 0;
 
     for (int i = 0; i < sumTill + 1; i++) {
