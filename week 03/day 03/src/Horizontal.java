@@ -6,24 +6,27 @@ import static javax.swing.JFrame.EXIT_ON_CLOSE;
 
 import java.util.Random;
 
-public class ToTheCenter {
+public class Horizontal {
 
-  public static void mainDraw(Graphics graphics){
+  public static void mainDraw(Graphics graphics) {
     // create a line drawing function that takes 2 parameters:
     // the x and y coordinates of the line's starting point
-    // and draws a line from that point to the center of the canvas.
+    // and draws a 50 long horizontal line from that point.
     // draw 3 lines with that function.
 
     Random rand = new Random();
-    for (int i = 0; i < 3; i++) {
-      int x = rand.nextInt(200) + 1;
-    int y = rand.nextInt(200) + 1;
-    toDrawLinesToTheCenter(graphics,x,y);
-  }
-}
 
-  public static void  toDrawLinesToTheCenter(Graphics g, int x, int y) {
-    g.drawLine(x,y,150,150);
+    for (int i = 0; i < 3; i++) {
+      int x = rand.nextInt(250) + 1;
+      int y = rand.nextInt(300) + 1;
+      drawHorizontalLine(graphics, x, y);
+    }
+  }
+
+
+
+  public static void drawHorizontalLine(Graphics g, int x, int y) {
+    g.drawLine(x, y, x+50, y);
   }
 
 
