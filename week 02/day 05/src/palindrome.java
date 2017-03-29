@@ -10,6 +10,6 @@ public class palindrome {
     System.out.println("Please type a word, let me create a palindrome: ");
     String usersWord = myScanner.next();
     StringBuilder reversedword = new StringBuilder(usersWord).reverse();
-    System.out.println(usersWord.concat(reversedword.toString()));
+    System.out.println( "Here it is: " + usersWord.concat(reversedword.toString()));
   }
 }

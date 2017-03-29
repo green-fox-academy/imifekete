@@ -1,9 +1,3 @@
-pics-container {
-  width: 1300px;
-  position: relative;
-  margin: 0 auto;
-}
-
 .image {
   width: 1400px;
   height: 400px;
@@ -38,23 +32,35 @@ img {
 
   .first-section {
     font-size: 17px;
-    margin: 50px;
+    margin-top: 50px,
+    margin-bottom: 50px;
+    margin-left: 80px;
+
+
   }
 
   .second-section {
-    margin: 50px;
+    margin-top: 50px,
+    margin-bottom: 50px;
+    margin-left: 80px;
   }
 
   .third-section{
-    margin: 50px;
+    margin-top: 50px,
+    margin-bottom: 50px;
+    margin-left: 80px;
   }
 
   .forth-section{
-    margin:50px;
+    margin-top: 50px,
+    margin-bottom: 50px;
+    margin-left: 80px;
   }
 
   .fifth-section{
-    margin:50px;
+    margin-top: 50px,
+    margin-bottom: 50px;
+    margin-left: 80px;
     border-top: solid 2px;
   }
 
