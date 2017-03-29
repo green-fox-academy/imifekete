@@ -1,19 +1,33 @@
 import javax.swing.*;
+
 import java.awt.*;
+
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
 
-public class PurpleStepsThreeD {
+public class CheckerBoard {
 
   public static void mainDraw(Graphics graphics){
+    // fill the canvas with a checkerboard pattern.
 
-    int size = 10;
-    Color indigo = new Color(70,0,130);
+    int row;
+    int col;
+    int size = 20;
 
-    for (int i = 10; i <= 300; i=i+10) {
-      graphics.setColor(indigo);
-      graphics.fillRect(i, i, size, size);
+    for (row = 0; row < 15; row++) {
+      for (col = 0; col < 15; col++) {
+
+        if ((row % 2) == (col % 2)) {
+          graphics.setColor(Color.white);
+        } else {
+          graphics.setColor(Color.black);
+        }
+        graphics.fillRect(row * size, col * size, size, size);
+      }
     }
   }
+
+
+
 
   //    Don't touch the code below
   public static void main(String[] args) {
