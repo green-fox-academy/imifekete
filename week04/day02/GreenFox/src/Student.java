@@ -30,6 +30,4 @@ public class Student extends Person {
     this.previousOrganization = "The School of life";
     this.skippedDays = 0;
   }
-
-
 }
