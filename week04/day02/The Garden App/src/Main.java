@@ -8,5 +8,13 @@ public class Main {
     garden.addPlant(new Flower("blue"));
     garden.addPlant(new Tree("purple"));
     garden.addPlant(new Tree("orange"));
+
+    garden.checkForWaterNeeded();
+    System.out.println();
+    garden.waterGarden(40);
+    garden.checkForWaterNeeded();
+    System.out.println();
+    garden.waterGarden(70);
+    System.out.println();
   }
 }
