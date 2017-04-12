@@ -2,13 +2,13 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
-
 public class Board extends JComponent implements KeyListener {
 
-  int testBoxX;
-  int testBoxY;
+  int testBoxX = 0;
+  int testBoxY = 0;
 
-  static final int DIMENSION = 72;
+  public static final int DIMENSION = 72;
+
   int[][] tilesMap = new int[][]{
           {0, 0, 0, 1, 0, 1, 0, 0, 0, 0,},
           {0, 0, 0, 1, 0, 1, 0, 1, 1, 0,},
@@ -24,10 +24,6 @@ public class Board extends JComponent implements KeyListener {
   };
 
   public Board() {
-    testBoxX = 0;
-    testBoxY = 0;
-
-    setPreferredSize(new Dimension(720, 720));
     setPreferredSize(new Dimension(DIMENSION *10, DIMENSION * 11));
     setVisible(true);
   }
@@ -35,6 +31,8 @@ public class Board extends JComponent implements KeyListener {
   @Override
   public void paint(Graphics graphics) {
     super.paint(graphics);
+    PositionedImage hero = new PositionedImage("pictures/hero-down.png", testBoxX, testBoxY);
+
     int posX = 0;
     int posY = 0;
     for (int i = 0; i < 11; i ++) {
@@ -51,22 +49,7 @@ public class Board extends JComponent implements KeyListener {
       posX = 0;
       posY += DIMENSION;
     }
-  }
-
-  public static void main(String[] args) {
-    // Here is how you set up a new window and adding our board to it
-    JFrame frame = new JFrame("RPG Game");
-    Board board = new Board();
-    frame.add(board);
-    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    frame.setVisible(true);
-    frame.pack();
-    // Here is how you can add a key event listener
-    // The board object will be notified when hitting any key
-    // with the system calling one of the below 3 methods
-    frame.addKeyListener(board);
-    // Notice (at the top) that we can only do this
-    // because this Board class (the type of the board object) is also a KeyListener
+    hero.draw(graphics);
   }
 
   // To be a KeyListener the class needs to have these 3 methods in it
