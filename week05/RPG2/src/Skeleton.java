@@ -1,7 +1,5 @@
 public class Skeleton extends Character {
-  // HP: 2 * x * d6
-  //  DP: x/2 * d6
-  //  SP: x * d6
+
 
   boolean hasKey;
 
@@ -10,18 +8,5 @@ public class Skeleton extends Character {
     this.hasKey = true;
   }
 
-//  int[][] skeletonCoord = new int[3][2];
-//
-//  public void putRandomSkeleton() {
-//    for (int i = 0; i < skeletonCoord.length; i++) {
-//      int x = (int) (Math.random() * 10);
-//      int y = (int) (Math.random() * 11);
-//
-//      if (map[x][y] == 0) {
-//        skeletonCoord[i][0] = x * 72;
-//        skeletonCoord[i][1] = y * 72;
-//      }
-//    }
-//
-//  }
+
 }

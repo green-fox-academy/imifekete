@@ -24,5 +24,6 @@ public class PositionedImage {
     if (image != null) {
       graphics.drawImage(image, posX, posY, null);
     }
+    System.out.println();
   }
 }
