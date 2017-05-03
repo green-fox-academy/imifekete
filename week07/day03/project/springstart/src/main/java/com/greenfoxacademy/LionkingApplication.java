@@ -4,9 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringstartApplication {
+public class LionkingApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringstartApplication.class, args);
+		SpringApplication.run(LionkingApplication.class, args);
 	}
 }
