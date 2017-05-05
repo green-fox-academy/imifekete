@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8"/>
+    <link rel="stylesheet" th:href="@{/style.css}" />
     <title>Fox Club</title>
 </head>
 <body>
@@ -12,11 +13,11 @@
     </a>
 </ul>
 <img src="greenfox.png" alt="GreenFox"/>
-<p> This is Mr.Fox. Currently living on pizza and lemonade. He knows 2 tricks.</p>
+<p th:text ="'This is ' + ${name} + '. Currently living on ' + ${food} + ' and lemonade.  He knows ' + ${numberOfTricks} + ' tricks.'" />
 <h1> Known tricks</h1>
+<span th:if="${numberOfTricks} == 0 " th:text="'You know no tricks. Go and learn some.'"></span>
 <ul>
-    <li>write HTML</li>
-    <li>code in Java</li>
+
 </ul>
 </body>
 </html>
