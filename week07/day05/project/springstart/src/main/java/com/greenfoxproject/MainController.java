@@ -15,12 +15,17 @@ public class MainController {
   @Autowired
   Fox fox;
 
-  @RequestMapping ("/")
+  @RequestMapping("/")
   public String index(Model model) {
     model.addAttribute("name", fox.getName());
     model.addAttribute("food", fox.getFood());
     model.addAttribute("drink", fox.getDrink());
     model.addAttribute("numberOfTricks", fox.numberOfTricks());
     return "index";
+  }
+
+  @RequestMapping("/nutrition_store")
+   public String nutritionStore() {
+    return "nutrition_store";
   }
 }
