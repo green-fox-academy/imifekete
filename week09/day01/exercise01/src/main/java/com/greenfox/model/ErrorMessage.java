@@ -1,10 +1,10 @@
 package com.greenfox.model;
 
 public class ErrorMessage {
-  private String error;
+   String error;
 
   public ErrorMessage() {
-    this.error = "I am Groot!";
+    error = "I am Groot!";
   }
 
   public String getError() {

@@ -1,11 +1,12 @@
 package com.greenfox.model;
 
 public class Groot {
-  private String received;
-  private String translated;
+  String received;
+  String translated;
 
-  public Groot(String translated) {
-    this.translated = "I am Groot!";
+  public Groot(String receivedMessage) {
+    received = receivedMessage;
+    translated = "I am groot!";
   }
 
   public Groot() {
