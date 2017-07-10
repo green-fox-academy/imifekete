@@ -17,7 +17,7 @@ public class SecondLargestElement {
     System.out.println(getSecondLargest(list));
   }
 
-  private static int getSecondLargest(List<Integer> list) {
+  public static int getSecondLargest(List<Integer> list) {
 
     int secondLargest = list.get(0);
     int largest = list.get(0);
