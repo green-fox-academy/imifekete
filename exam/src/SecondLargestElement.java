@@ -1,10 +1,11 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class SecondLargestElement {
 
   public static void main(String[] args) {
 
-    ArrayList<Integer> list = new ArrayList<>();
+    List<Integer> list = new ArrayList<>();
     list.add(1);
     list.add(2);
     list.add(3);
@@ -16,7 +17,7 @@ public class SecondLargestElement {
     System.out.println(getSecondLargest(list));
   }
 
-  private static int getSecondLargest(ArrayList<Integer> list) {
+  private static int getSecondLargest(List<Integer> list) {
 
     int secondLargest = list.get(0);
     int largest = list.get(0);
